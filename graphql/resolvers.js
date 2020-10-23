@@ -1,6 +1,10 @@
+import { people, getById} from "./db"
+
+
 const reslovers = {
     Query: {
-        name: () => "Ralpis"
+        people: () => people,
+        person: (_, { id }) => getById(id)
     }
 };
 
