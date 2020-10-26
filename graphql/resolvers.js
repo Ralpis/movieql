@@ -1,10 +1,10 @@
-import { people, getById} from "./db"
+import { getMovies, getById} from "./db"
 
 
 const reslovers = {
     Query: {
-        people: () => people,
-        person: (_, { id }) => getById(id)
+        movies: () => getMovies,
+        movie: (_, { id }) => getById(id)
     }
 };
 
