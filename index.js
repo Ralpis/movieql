@@ -9,4 +9,3 @@ resolvers
 });
 
 server.start(()=> console.log("GraphQL Server Running"));
- 
